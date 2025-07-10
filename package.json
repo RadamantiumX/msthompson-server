@@ -1,0 +1,28 @@
+{
+  "name": "msthompson-server",
+  "version": "1.0.0",
+  "description": "For MS Thomson School",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadamantiumX/msthompson-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RadamantiumX/msthompson-server/issues"
+  },
+  "homepage": "https://github.com/RadamantiumX/msthompson-server#readme",
+  "dependencies": {
+    "@prisma/client": "^6.11.1",
+    "@prisma/extension-accelerate": "^2.0.2",
+    "cors": "^2.8.5",
+    "node": "^22.17.0",
+    "prisma": "^6.11.1"
+  }
+}
