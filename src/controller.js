@@ -16,4 +16,14 @@ export class InformesController {
         res.status(400).json({error: error.message})
     }
   }
+
+  static async list(req, res, next){
+    try{
+        const messages = await prisma.informes.findMany()
+        res.status(200).json(messages)
+
+    }catch(error){
+         res.status(400).json({error: error.message})
+    }
+  }
 }
