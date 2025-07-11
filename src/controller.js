@@ -20,6 +20,10 @@ export class InformesController {
   static async list(req, res, next){
     try{
         const messages = await prisma.informes.findMany()
+        res.set({
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      });
         res.status(200).json(messages)
 
     }catch(error){
